@@ -10,7 +10,8 @@ const Card = ({ name, status, pictureUrl }) => {
     };
 
     const handlePinChange = (e) => {
-        setPin(e.target.value); // Update the PIN value
+        const numericValue = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+        setPin(numericValue); // Update the PIN value
     };
 
     const handlePinSubmit = (e) => {
@@ -42,6 +43,8 @@ const Card = ({ name, status, pictureUrl }) => {
                             value={pin}
                             onChange={handlePinChange}
                             placeholder="Enter PIN"
+                            inputMode="numeric"
+                            pattern="\d*"
                         />
                         <button type="submit">Submit</button>
                     </form>

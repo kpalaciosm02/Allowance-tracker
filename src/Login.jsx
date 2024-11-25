@@ -14,8 +14,8 @@ function Login() {
             <h2>Login</h2>
             <form>
                 <div className="text-input-container">
-                    <label htmlFor="username">Username</label>
-                    <input type="text" id='username' placeholder='Enter your username'/>
+                    <label htmlFor="username">Family name</label>
+                    <input type="text" id='username' placeholder='Enter your family name'/>
                 </div>
 
                 <div className="text-input-container">

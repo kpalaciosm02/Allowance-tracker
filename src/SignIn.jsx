@@ -14,11 +14,11 @@ function SignIn() {
             <h2>Sign In</h2>
             <form>
                 <div className="text-input-container">
-                    <label htmlFor="username">Username</label>
+                    <label htmlFor="username">Family name</label>
                     <input 
                         type="text" 
                         id='username' 
-                        placeholder='Enter your username'
+                        placeholder='Enter your family name'
                     />
                 </div>
 
